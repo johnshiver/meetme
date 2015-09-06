@@ -13,6 +13,13 @@ class UserProfile(TimeStampedModel):
     city = models.CharField(max_length=128, blank=False)
     state = models.CharField(max_length=64, blank=False)
 
+    # personal content
+    summary = models.TextField()
+    life = models.TextField()
+    interests = models.TextField()
+    seeking = models.TextField()
+
+
 
 
 
